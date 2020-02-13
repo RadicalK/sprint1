@@ -9,12 +9,19 @@
 
 <body>
   <!-- テキストボタンの場合 -->
-  <button type="button" name="button" id="sound">sound</button>
+  <button id="sound1">sound1</button>
+  <button id="sound2">sound2</button>
+  <button id="sound3">sound3</button>
 
   <!-- 音声ファイルの読み込み 9〜10行目にURLを指定 -->
   <audio id="sound-file" preload="auto">
 	<source src="./sound/decision12.mp3" type="audio/mp3">
-  <source src="./sound/shinse6.mp3" type="audio/mp3">
+</audio>
+  <audio id="sound-file2" preload="auto">
+<source src="./sound/shine6.mp3" type="audio/mp3">
+</audio>
+  <audio id="sound-file3" preload="auto">
+<source src="./sound/trumpet1.mp3" type="audio/mp3">
 </audio>
 
   <script src="js/jquery-3.3.1.slim.min.js"></script>
