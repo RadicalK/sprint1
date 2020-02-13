@@ -9,9 +9,22 @@
 
 <body>
   <!-- テキストボタンの場合 -->
-  <button id="sound1">sound1</button>
-  <button id="sound2">sound2</button>
-  <button id="sound3">sound3</button>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <button id="sound1" class="w-100 mb-3 mt-3 btn btn-primary">sound1</button>
+      </div>
+      <div class="col-md-4">
+        <button id="sound2" class="w-100 mb-3 btn btn-primary">sound2</button>
+      </div>
+      <div class="col-md-4">
+        <button id="sound3" class="w-100 btn btn-primary">sound3</button>
+      </div>
+    </div>
+  </div>
 
   <!-- 音声ファイルの読み込み 9〜10行目にURLを指定 -->
   <audio id="sound-file" preload="auto">
