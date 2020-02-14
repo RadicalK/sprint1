@@ -15,6 +15,11 @@ $('#sound3').on('click', function() {
 	select = $( '#sound-file3' );
 });
 
+$('#sound4').on('click', function() {
+	$( '#sound-file4' ).get(0).play() ;
+	select = $( '#sound-file4' );
+});
+
 var aX = 0,
 	aY = 0,
 	aZ = 0;
