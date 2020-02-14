@@ -75,7 +75,7 @@ function displayData() {
 				// $( '#sound-file3' ).trigger('click');
 			} else {
 				counter++;
-				if(counter >= 10) {
+				if(counter >= 20) {
 					alert('counter 10')
 					if(select) {
 						select.get(0).play() ;
