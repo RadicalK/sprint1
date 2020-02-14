@@ -31,11 +31,12 @@ var timer = window.setInterval(() => {
 // データを表示する displayData 関数
 function displayData() {
 	var txt = document.getElementById("txt"); // データを表示するdiv要素の取得
-	txt.innerHTML = "x: " + aX + "<br>" // x軸の値
-		+
-		"y: " + aY + "<br>" // y軸の値
-		+
-		"z: " + aZ; // z軸の値
+	// txt.innerHTML = "x: " + aX + "<br>" // x軸の値
+	// 	+
+	// 	"y: " + aY + "<br>" // y軸の値
+	// 	+
+	// 	"z: " + aZ; // z軸の値
+		txt.innerHTML = 'yの絶対値の差分 ' + Math.abs(aY - oldY);
 
 		if(Math.abs(aY - oldY) > 2 && oldY !== 0) {
 			$( '#sound-file3' ).get(0).play() ;
