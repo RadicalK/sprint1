@@ -1,13 +1,18 @@
+var select;
+
 $('#sound1').on('click', function() {
 	$( '#sound-file' ).get(0).play() ;
+	select = $( '#sound-file' );
 });
 
 $('#sound2').on('click', function() {
 	$( '#sound-file2' ).get(0).play() ;
+	select = $( '#sound-file2' );
 });
 
 $('#sound3').on('click', function() {
 	$( '#sound-file3' ).get(0).play() ;
+	select = $( '#sound-file3' );
 });
 
 var aX = 0,
@@ -56,7 +61,10 @@ function displayData() {
 		'v4 ' + 'yの差分 ' + Math.abs(aY - oldY);
 
 		if(aY - oldY > 2 && oldY !== 0) {
-			$( '#sound-file3' ).get(0).play() ;
+			if(select) {
+				select.get(0).play() ;
+			}
+			// $( '#sound-file3' ).get(0).play() ;
 			// $( '#sound-file3' ).trigger('click');
 		}
 		oldY = aY;
