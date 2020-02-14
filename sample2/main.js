@@ -58,7 +58,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.3 ' + "<br>"
+		'v3.4 ' + "<br>"
 		+
 		'diffY ' + aY - oldY + "<br>" + 'diffZ ' + aZ - oldZ ;
 
