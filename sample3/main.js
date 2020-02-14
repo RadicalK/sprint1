@@ -84,7 +84,7 @@ function displayData() {
 				counter++;
 				if(counter >= 20) {
 					if(select) {
-						$('sound4').get(0).play() ;
+						$('#sound-file4').get(0).play() ;
 					}
 					counter = 0;
 					flag = false;
