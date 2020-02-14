@@ -58,7 +58,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.1 ' + 'diffY ' + diffY + "<br>" + 'diffZ ' + diffZ ;
+		'v3.2 ' + 'diffY ' + diffY + "<br>" + 'diffZ ' + diffZ ;
 		if(aY && aZ) {
 		var diffY = aY - oldY;
 		var diffZ = aZ - oldZ;
