@@ -58,11 +58,10 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.2 ' + "<br>"
+		'v3.3 ' + "<br>"
 		+
-		'diffY ' + diffY + "<br>" + 'diffZ ' + diffZ ;
-		
-		if(aY && aZ) {
+		'diffY ' + aY - oldY + "<br>" + 'diffZ ' + aZ - oldZ ;
+
 		var diffY = aY - oldY;
 		var diffZ = aZ - oldZ;
 		if((diffZ <= -2 || diffZ >= 1) && oldZ !== 0) {
@@ -76,5 +75,4 @@ function displayData() {
 		}
 		oldY = aY;
 		oldZ = aZ;
-	}
 }
