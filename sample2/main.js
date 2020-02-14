@@ -59,18 +59,19 @@ function displayData() {
 		"z: " + aZ + "<br>"
 		+
 		'v3.1 ' + 'diffY ' + diffY + "<br>" + 'diffZ ' + diffZ ;
+		if(aY && aZ) {
 		var diffY = aY - oldY;
 		var diffZ = aZ - oldZ;
-if((diffZ <= -2 || diffZ >= 1) && oldZ !== 0) {
-	if((diffY >= -10 && diffY <= -9) && oldY !== 0) {
-		if(select) {
-			select.get(0).play() ;
+		if((diffZ <= -2 || diffZ >= 1) && oldZ !== 0) {
+			if((diffY >= -10 && diffY <= -9) && oldY !== 0) {
+				if(select) {
+					select.get(0).play() ;
+				}
+				// $( '#sound-file3' ).get(0).play() ;
+				// $( '#sound-file3' ).trigger('click');
+			}
 		}
-		// $( '#sound-file3' ).get(0).play() ;
-		// $( '#sound-file3' ).trigger('click');
-	}
-}
-
 		oldY = aY;
 		oldZ = aZ;
+	}
 }
