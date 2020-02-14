@@ -58,14 +58,14 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.5 ' + "<br>"
+		'v3.6 ' + "<br>"
 		+
 		'diffY ' + Math.abs(aY - oldY) + "<br>" + 'diffZ ' + Math.abs(aZ - oldZ) ;
 
 		// var diffY = aY - oldY;
 		// var diffZ = aZ - oldZ;
 		// if((aZ - oldZ <= -2 || aZ - oldZ >= 1) && oldZ !== 0) {
-			if(Math.abs(aY - oldY) >= 7 && oldY !== 0) {
+			if(Math.abs(aY - oldY) >= 6 && oldY !== 0) {
 				if(select) {
 					select.get(0).play() ;
 				}
