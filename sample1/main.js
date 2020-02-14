@@ -57,9 +57,9 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v7 ' + 'yの差分 ' + Math.abs(aY - oldY);
+		'abs3 ' + 'yの差分 ' + Math.abs(aY - oldY);
 
-		if(aY - oldY > 2 && oldY !== 0) {
+		if(aY - oldY > 3 && oldY !== 0) {
 			if(select) {
 				select.get(0).play() ;
 			}
