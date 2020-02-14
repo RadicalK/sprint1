@@ -60,7 +60,7 @@ function displayData() {
 		+
 		'v3.4 ' + "<br>"
 		+
-		'diffY ' + aY - oldY + "<br>" + 'diffZ ' + aZ - oldZ ;
+		'diffY ' + Math.abs(aY - oldY) + "<br>" + 'diffZ ' + Math.abs(aZ - oldZ) ;
 
 		// var diffY = aY - oldY;
 		// var diffZ = aZ - oldZ;
