@@ -20,7 +20,6 @@ var aX = 0,
 	aZ = 0;
 var oldY = 0;
 var oldZ = 0;
-var counter = 0;
 
 $('#permission').on('click', function() {
 	ClickRequestDeviceSensor();
@@ -67,19 +66,11 @@ function displayData() {
 		// var diffZ = aZ - oldZ;
 		// if((aZ - oldZ <= -2 || aZ - oldZ >= 1) && oldZ !== 0) {
 			if(Math.abs(aY - oldY) >= 3 && Math.abs(aY) > 8 && oldY !== 0) {
-				counter = 0;
 				if(select) {
 					select.get(0).play() ;
 				}
 				// $( '#sound-file3' ).get(0).play() ;
 				// $( '#sound-file3' ).trigger('click');
-			} else {
-				counter++;
-				if(counter >= 10) {
-					if(select) {
-						select.get(0).play() ;
-					}
-				}
 			}
 		// }
 		oldY = aY;
