@@ -36,7 +36,7 @@ function displayData() {
 	// 	"y: " + aY + "<br>" // y軸の値
 	// 	+
 	// 	"z: " + aZ; // z軸の値
-		txt.innerHTML = 'yの差分 ' + Math.abs(aY - oldY);
+		txt.innerHTML = 'v1 ' + 'yの差分 ' + Math.abs(aY - oldY);
 
 		if(aY - oldY > 2 && oldY !== 0) {
 			$( '#sound-file3' ).get(0).play() ;
