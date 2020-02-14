@@ -21,6 +21,7 @@ var aX = 0,
 var oldY = 0;
 var oldZ = 0;
 var counter = 0;
+var flag = true;
 
 $('#permission').on('click', function() {
 	ClickRequestDeviceSensor();
@@ -74,14 +75,16 @@ function displayData() {
 				// $( '#sound-file3' ).get(0).play() ;
 				// $( '#sound-file3' ).trigger('click');
 			} else {
+				if(flag) {
 				counter++;
 				if(counter >= 20) {
-					alert(counter)
 					if(select) {
 						select.get(0).play() ;
 					}
 					counter = 0;
+					flag = false;
 				}
+			}
 			}
 		// }
 		oldY = aY;
