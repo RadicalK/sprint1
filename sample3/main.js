@@ -47,7 +47,7 @@ window.addEventListener("devicemotion", (dat) => {
 
 var timer = window.setInterval(() => {
 	displayData();
-}, 300);
+}, 600);
 
 // データを表示する displayData 関数
 function displayData() {
@@ -58,7 +58,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.4 ' + "<br>"
+		'v3.5 ' + "<br>"
 		+
 		'diffY ' + Math.abs(aY - oldY) + "<br>" + 'diffZ ' + Math.abs(aZ - oldZ) ;
 
