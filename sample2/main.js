@@ -62,10 +62,10 @@ function displayData() {
 		+
 		'diffY ' + aY - oldY + "<br>" + 'diffZ ' + aZ - oldZ ;
 
-		var diffY = aY - oldY;
-		var diffZ = aZ - oldZ;
-		if((diffZ <= -2 || diffZ >= 1) && oldZ !== 0) {
-			if((diffY >= -10 && diffY <= -9) && oldY !== 0) {
+		// var diffY = aY - oldY;
+		// var diffZ = aZ - oldZ;
+		if((aZ - oldZ <= -2 || aZ - oldZ >= 1) && oldZ !== 0) {
+			if((aY - oldY >= -10 && aY - oldY <= -9) && oldY !== 0) {
 				if(select) {
 					select.get(0).play() ;
 				}
