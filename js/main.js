@@ -58,7 +58,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"  // z軸の値
 		+
-		'v5 ' + 'yの差分 ' + Math.abs(aY - oldY);
+		'v6 ' + 'yの差分 ' + Math.abs(aY - oldY);
 
 		if(aY - oldY > 2 && oldY !== 0) {
 			if(select) {
