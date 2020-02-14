@@ -10,10 +10,10 @@ $('#sound2').on('click', function() {
 	select = $( '#sound-file2' );
 });
 
-// $('#sound3').on('click', function() {
-// 	$( '#sound-file3' ).get(0).play() ;
-// 	select = $( '#sound-file3' );
-// });
+$('#sound3').on('click', function() {
+	$( '#sound-file3' ).get(0).play() ;
+	select = $( '#sound-file3' );
+});
 
 var aX = 0,
 	aY = 0,
