@@ -65,7 +65,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.13 ' + "<br>"
+		'v3.14 ' + "<br>"
 		+
 		'diffY ' + Math.abs(aY - oldY) + "<br>" + 'diffZ ' + Math.abs(aZ - oldZ) ;
 
@@ -84,7 +84,7 @@ function displayData() {
 				counter++;
 				if(counter >= 20) {
 					if(select) {
-						select.get(0).play() ;
+						$('sound4').get(0).play() ;
 					}
 					counter = 0;
 					flag = false;
