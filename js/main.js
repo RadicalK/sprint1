@@ -35,7 +35,7 @@ function displayData() {
 		+
 		"z: " + aZ; // z軸の値
 
-		if(y > 2) {
+		if(aY > 2) {
 			$( '#sound-file3' ).get(0).play() ;
 		}
 }
