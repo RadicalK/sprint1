@@ -59,7 +59,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.8 ' + "<br>"
+		'v3.9 ' + "<br>"
 		+
 		'diffY ' + Math.abs(aY - oldY) + "<br>" + 'diffZ ' + Math.abs(aZ - oldZ) ;
 
