@@ -59,7 +59,7 @@ function displayData() {
 		+
 		"z: " + aZ + "<br>"
 		+
-		'v3.10 ' + "<br>"
+		'v3.11 ' + "<br>"
 		+
 		'diffY ' + Math.abs(aY - oldY) + "<br>" + 'diffZ ' + Math.abs(aZ - oldZ) ;
 
@@ -76,10 +76,11 @@ function displayData() {
 			} else {
 				counter++;
 				if(counter >= 20) {
-					alert('counter 10')
+					alert(counter)
 					if(select) {
 						select.get(0).play() ;
 					}
+					counter = 0;
 				}
 			}
 		// }
